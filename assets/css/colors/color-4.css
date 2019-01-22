@@ -1,0 +1,80 @@
+
+/*** 
+
+====================================================================
+	Main color
+====================================================================
+
+ ***/
+
+nav.main-navigation .navbar-nav a:hover,
+.service-box-one .icon-box,
+.download .download-btn:hover,
+.video-2 .video-2-icon:hover,
+.how-box-one .icon-box,
+.how-box-one:hover h3 a,
+.s-list span.fa,
+.blog-style-two .inner-box:hover .content-box .date,
+.how-box-one .icon-box,
+.blog-style-two .inner-box:hover .post-meta li a,
+.service-box-three:hover h3 a,
+.service-box-three:hover .icon-box,
+.service-box-four:hover h3 a,
+.service-box-four:hover .icon-box,
+.pricing-table .price-value,
+.pricing-table .heading,
+.main-footer .contact-info li .icon
+{
+	color: #b06ab3;
+}
+
+nav.main-navigation .navbar-toggle,
+nav.main-navigation .navbar-nav .btn,
+.has-line-center::after,
+.has-line::after,
+.about .download-btn,
+.accordion-box .block .acc-btn.active .icon-outer,
+.screenshots .owl-prev,
+.screenshots .owl-next,
+.video .more-btn,
+.video .partial-bg .bg-wrapper .btn-round-video,
+.service-box-three .icon-box,
+.service-box-four .icon-box,
+.screenshots .owl-carousel .owl-dots .active,
+.screenshots .owl-carousel .owl-dots .owl-dot span,
+.pricing-table:hover .pricing-table-header,
+.pricing-table .pricing-table-signup a,
+.subscribe-newsletter form .more-btn,
+.main-footer .about-widget .social-links li a:hover
+{
+	background: #b06ab3 !important
+}
+
+nav.main-navigation .navbar-nav a:hover,
+nav.main-navigation .navbar-nav .btn,
+.video-2 .video-2-icon:hover,
+.how-box-one .icon-box,
+.about .download-btn:hover,
+.blog-style-two .inner-box:hover .content-box .date,
+.testimonials-style-two .testimonial-item .author-thumb img,
+.pricing-table .pricing-table-header,
+.subscribe-newsletter form input[type="text"],
+.main-footer .newsletter-widget input:focus,
+.main-footer .newsletter-widget select:focus
+{
+	border-color: #b06ab3 !important
+}
+
+.has-gradient {
+    background: -webkit-linear-gradient(45deg, #fd81b5 0%, #c961f7 50%, #8089ff 100%);
+    background: linear-gradient(45deg, #fd81b5 0%, #c961f7 50%, #8089ff 100%);
+    color: #fff
+}
+
+.pricing-table .pricing-table-signup a:hover{
+    box-shadow: 0 0 10px #b06ab3;
+}
+nav.main-navigation .navbar-nav .btn:hover {
+    background: transparent !important;
+    color: #333;
+}
