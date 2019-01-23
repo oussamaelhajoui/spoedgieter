@@ -72,7 +72,8 @@ const whitelist = [
     "Tilburg",
     "Bergen-op-zoom",
     "Nieuwekerk-aan-de-IJssel",
-    "Krimpen-aan-de-IJssel"
+    "Krimpen-aan-de-IJssel",
+    "Ouderkerk-aan-de-IJssel"
 ];
 
 function getExtension(filename) {
