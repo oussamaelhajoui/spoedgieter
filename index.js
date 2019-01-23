@@ -121,8 +121,8 @@ var httpServer = http.createServer(function(req, res) {
                 res.end(index.replaceAll('${cityThingy}$', 'Best plumber service!')); // Non-whitelisted city supplied, we should use none (Best plumber service!)
             }
         } else {
-            // res.end(index.replaceAll('${cityThingy}$', 'Best plumber service!')); //The user did not supplied a city on the url, we'll use none (Best plumber service!)
-            res.end(shit);
+            res.end(index.replaceAll('${cityThingy}$', 'Best plumber service!')); //The user did not supplied a city on the url, we'll use none (Best plumber service!)
+            // res.end(shit);
         }
     }
     
