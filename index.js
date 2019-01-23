@@ -70,7 +70,8 @@ const whitelist = [
     "Nieuwegein",
     "Culemborg",
     "Tilburg",
-    "Bergen-op-zoom"
+    "Bergen-op-zoom",
+    "Nieuwekerk-aan-de-IJssel"
 ];
 
 function getExtension(filename) {
