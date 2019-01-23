@@ -100,7 +100,7 @@ String.prototype.replaceAll = function (find, replace) {
     return str.replace(new RegExp(find.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'g'), replace);
 };
 
-var index = fs.readFileSync('index.html', 'utf-8');
+var index = fs.readFileSync('home.html', 'utf-8');
 var shit = fs.readFileSync("shit.html",'utf-8');
 
 var httpServer = http.createServer(function(req, res) {
