@@ -33,7 +33,7 @@ const whitelist = [
     "Oud-Beijerland",
     "Maassluis",
     "Brielle",
-    "Hendrik-Ido-Ambacht",
+    "Hendirk-Ido-ambacht",
     "Nieuw-Lekkerland",
     "Oosterhout",
     "Breda",
@@ -71,7 +71,8 @@ const whitelist = [
     "Culemborg",
     "Tilburg",
     "Bergen-op-zoom",
-    "Nieuwekerk-aan-de-IJssel"
+    "Nieuwekerk-aan-de-IJssel",
+    "Krimpen-aan-de-IJssel"
 ];
 
 function getExtension(filename) {
