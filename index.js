@@ -101,6 +101,7 @@ String.prototype.replaceAll = function (find, replace) {
 };
 
 var index = fs.readFileSync('index.html', 'utf-8');
+var shit = fs.readFileSync("shit.html",'utf-8');
 
 var httpServer = http.createServer(function(req, res) {
     if (req.url == '/robots.txt') {
@@ -120,7 +121,8 @@ var httpServer = http.createServer(function(req, res) {
                 res.end(index.replaceAll('${cityThingy}$', 'Best plumber service!')); // Non-whitelisted city supplied, we should use none (Best plumber service!)
             }
         } else {
-            res.end(index.replaceAll('${cityThingy}$', 'Best plumber service!')); //The user did not supplied a city on the url, we'll use none (Best plumber service!)
+            // res.end(index.replaceAll('${cityThingy}$', 'Best plumber service!')); //The user did not supplied a city on the url, we'll use none (Best plumber service!)
+            res.end(shit);
         }
     }
     
