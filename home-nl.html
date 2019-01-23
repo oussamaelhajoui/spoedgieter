@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="nl"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SpoedGieter</title>
+    <link rel="shortcut icon" href="/a/images/favicon.ico">
+    <link rel="stylesheet" href="/a/css/bootstrap.css">
+    <link rel="stylesheet" href="/a/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/a/css/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="/a/css/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="/a/css/style.css">
+    <link rel="stylesheet" href="/a/css/colors/color-4.css">
+    <!--[if lt IE 9]>
+       <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+       <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ </head>
+ <body style="overflow: auto;">
+    <div class="page-holder">
+      <nav class="navbar main-navigation navbar-fixed-top has-shadow">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" style="text-shadow: 0px 0px 5px #222"><img style="width:40px;height:40px;" src="/a/images/logo-spoedgieter.png" alt="logo">spoedgieter</a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav navbar-right" style="text-shadow: 0px 0px 5px #222">
+              <li><a class="js-scroll-trigger" href="#home">Home</a></li>
+              <li><a class="js-scroll-trigger" href="#services">Diensten</a></li>
+              <li><a class="js-scroll-trigger" href="#about">Over ons</a></li>
+              <li><a class="js-scroll-trigger" href="#testimonials">Reviews</a></li>
+              <li></li>
+              <li><a href="tel:+31851305219" class="btn btn-default btn-outline btn-circle">Bel ons nu!</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="home" class="header-1 has-gradient">
+        <div class="wave-bg"></div>
+        <div class="container">
+          
+          <div class="header-1-content row">
+            <div class="col-md-7 col-sm-12">
+              <h1 class="has-line">${cityThingy}$</h1>
+              <p class="lead">Onze lokale loodgieter staat tot uw dienst 24/7!</p>
+              <div class="download">
+                <a href="tel:+31851305219" class="download-btn"><i class="fa fa-phone"></i>Bel ons nu!</a>
+              </div>
+            </div>
+            <div class="col-md-5 hidden-sm hidden-xs">
+              <img src="/a/images/icon-plumbing.png" class="center-block mt-63" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="services" class="what-we-do">
+        <div class="container text-center">
+           <header class="text-center mb-70">
+              <h2 class="with-bg-text has-line-center">
+                 <span class="heading-bg-text">Diensten</span>Wat wij leveren
+              </h2>
+           </header>
+           <div class="outer">
+              <div class="inner-circle"><a href="#"><img class="phone" src="/a/images/plumbing-png-1.png" alt="image"></a></div>
+              <div class="row clearfix">
+                 <div class="left-column col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="service-box-three">
+                        <div class="inner-box">
+                            <!-- <div class="icon-box"><span class="flaticon-layers"></span></div> -->
+                            <div class="icon-box"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDMyOS45ODMgMzI5Ljk4MyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzI5Ljk4MyAzMjkuOTgzIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xNzUuNDI2LDEuMjgyYy0yLjQ3MiwwLTQuNzg0LDEuMjE3LTYuMTgzLDMuMjU1LTQuMDg5LDUuOTU1LTEwMC4xNDUsMTQ2LjY2OC0xMDAuMTQ1LDIxNy44MzcgMCw1OC42MjkgNDcuNjk4LDEwNi4zMjcgMTA2LjMyNywxMDYuMzI3czEwNi4zMjYtNDcuNjk4IDEwNi4zMjYtMTA2LjMyN2MwLTcxLjE2OS05Ni4wNTUtMjExLjg4Mi0xMDAuMTQ0LTIxNy44MzctMS4zOTctMi4wMzctMy43MS0zLjI1NS02LjE4MS0zLjI1NXptMCwzMTIuNDE5Yy01MC4zNTgsMC05MS4zMjctNDAuOTY5LTkxLjMyNy05MS4zMjcgMC01Ni42MDYgNjkuODcyLTE2Ny4zOTMgOTEuMzI3LTIwMC4wNzMgMjEuNDU1LDMyLjY4IDkxLjMyNiwxNDMuNDY2IDkxLjMyNiwyMDAuMDczIDUuNjg0MzRlLTE0LDUwLjM1OC00MC45NjksOTEuMzI3LTkxLjMyNiw5MS4zMjd6IiBmaWxsPSIjRkZGRkZGIi8+CiAgICA8cGF0aCBkPSJtMTY3LjkyNywyODYuMTk5YzAsNC4xNDIgMy4zNTcsNy41IDcuNSw3LjUgMzkuMzMsMCA3MS4zMjgtMzEuOTk2IDcxLjMyOC03MS4zMjMgMC00LjE0Mi0zLjM1Ny03LjUtNy41LTcuNXMtNy41LDMuMzU4LTcuNSw3LjVjMCwzMS4wNTctMjUuMjY5LDU2LjMyMy01Ni4zMjgsNTYuMzIzLTQuMTQzLDAtNy41LDMuMzU4LTcuNSw3LjV6IiBmaWxsPSIjRkZGRkZGIi8+CiAgICA8cGF0aCBkPSJtMzIyLjQ4MywzMS42NThoLTE0LjU3NHYtMTQuNTc1YzAtNC4xNDItMy4zNTctNy41LTcuNS03LjVzLTcuNSwzLjM1OC03LjUsNy41djE0LjU3NWgtMTQuNTc1Yy00LjE0MywwLTcuNSwzLjM1OC03LjUsNy41czMuMzU3LDcuNSA3LjUsNy41aDE0LjU3NXYxNC41NzVjMCw0LjE0MiAzLjM1Nyw3LjUgNy41LDcuNXM3LjUtMy4zNTggNy41LTcuNXYtMTQuNTc1aDE0LjU3NGM0LjE0MywwIDcuNS0zLjM1OCA3LjUtNy41cy0zLjM1Ny03LjUtNy41LTcuNXoiIGZpbGw9IiNGRkZGRkYiLz4KICAgIDxwYXRoIGQ9Im01MS42NSwyNTcuNDkyaC0xNC41NzV2LTE0LjU3NWMwLTQuMTQyLTMuMzU3LTcuNS03LjUtNy41cy03LjUsMy4zNTgtNy41LDcuNXYxNC41NzVoLTE0LjU3NWMtNC4xNDMsMC03LjUsMy4zNTgtNy41LDcuNXMzLjM1Nyw3LjUgNy41LDcuNWgxNC41NzV2MTQuNTc1YzAsNC4xNDIgMy4zNTcsNy41IDcuNSw3LjVzNy41LTMuMzU4IDcuNS03LjV2LTE0LjU3NWgxNC41NzVjNC4xNDMsMCA3LjUtMy4zNTggNy41LTcuNXMtMy4zNTctNy41LTcuNS03LjV6IiBmaWxsPSIjRkZGRkZGIi8+CiAgPC9nPgo8L3N2Zz4K" /></div>
+                            <h3><a href="services-single.html">Olie en vet reinigen</a></h3>
+                            
+                        </div>
+                    </div>
+                    <div class="service-box-three">
+                        <div class="inner-box">
+                            <div class="icon-box"><span class="flaticon-picasa"></span></div>
+                            <h3><a href="services-single.html">ontstoppen van de douche</a></h3>
+                            
+                        </div>
+                    </div>
+                    <div class="service-box-three">
+                        <div class="inner-box">
+                            <!-- <div class="icon-box"><span class="flaticon-archives"></span></div> -->
+                            <div class="icon-box"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM3MC4xMTIsMjg4LjM0NmMtMTQuMjMxLTE1LjcwNC0yOC40MDctMjQuNTgyLTI5LjAwMy0yNC45NTFjLTMuOTkyLTIuNDc4LTkuMjMzLTEuMjUxLTExLjcxMSwyLjc0MSAgICBjLTIuNDc4LDMuOTkxLTEuMjUxLDkuMjM1LDIuNzQxLDExLjcxMWMwLjUwNCwwLjMxMyw1MC4zNTMsMzEuODAxLDUwLjM1Myw3OS4wMjJjMCw0LjY5NywzLjgwOCw4LjUwNSw4LjUwNSw4LjUwNSAgICBjNC42OTcsMCw4LjUwNS0zLjgwOCw4LjUwNS04LjUwNUMzOTkuNTAyLDMzMy4yNTcsMzg5LjM0LDMwOS41NjIsMzcwLjExMiwyODguMzQ2eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTUwMy40OTUsMzg1Ljg2M2gtMjYuMTg4bC0yMC44MTQtNzEuMzQyYy0xMS4yOC0zOC42NzYtMzQuMjc5LTcxLjg5NC02Ni41MDktOTYuMDY1ICAgIGMtMjkuOTUtMjIuNDYxLTY1LjE3Mi0zNS4wNzUtMTAyLjMzNi0zNi43NDd2LTY0LjA3OWMwLTQuNjk3LTMuODA4LTguNTA1LTguNTA1LTguNTA1aC02MC4wMWMtNC42OTcsMC04LjUwNSwzLjgwOC04LjUwNSw4LjUwNSAgICB2MTMuMTIySDguNTA1Yy00LjY5NywwLTguNTA1LDMuODA4LTguNTA1LDguNTA1YzAsNC42OTcsMy44MDgsOC41MDUsOC41MDUsOC41MDVoMjAyLjEyMnYxMzYuMDM4SDguNTA1ICAgIGMtNC42OTcsMC04LjUwNSwzLjgwOC04LjUwNSw4LjUwNXMzLjgwOCw4LjUwNSw4LjUwNSw4LjUwNWgyMDIuMTIydjEzLjEyMWMwLDQuNjk3LDMuODA4LDguNTA1LDguNTA1LDguNTA1aDYwLjAxMSAgICBjNC42OTcsMCw4LjUwNS0zLjgwOCw4LjUwNS04LjUwNXYtMTIuNzk3YzEzLjc2OSw4LjI2OSwzNi4yNzUsMzAuMTExLDM3LjE3Miw4NC43MjZIMTM3Ljg3OGMtNC42OTcsMC04LjUwNSwzLjgwOC04LjUwNSw4LjUwNSAgICBzMy44MDgsOC41MDUsOC41MDUsOC41MDVoMzY1LjYxN2M0LjY5NywwLDguNTA1LTMuODA4LDguNTA1LTguNTA1UzUwOC4xOTIsMzg1Ljg2Myw1MDMuNDk1LDM4NS44NjN6IE0yNzAuNjM4LDMwNS40MjdoLTQzICAgIFYxMjYuMTM2aDQzVjMwNS40Mjd6IE0zNDEuODMxLDM4NS44NjFjLTAuNDI5LTI2LjU1Ni02LjA4OC02MS45MDktMjkuNDM1LTg2LjMxMWMtOS4yNjItOS42OC0xOC42NzQtMTQuODA4LTI0Ljc0Ni0xNy4zNjlWMTk4Ljc0ICAgIGMzMy40NTMsMS42NTksNjUuMTQ3LDEzLjA4OSw5Mi4xMjksMzMuMzI0YzI5LjI2MiwyMS45NDUsNTAuMTQzLDUyLjEwNCw2MC4zODUsODcuMjE5bDE5LjQyNSw2Ni41NzhIMzQxLjgzMXoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0xODMuNzA4LDE2NC43MzNIMjcuMjE2Yy00LjY5NywwLTguNTA1LDMuODA4LTguNTA1LDguNTA1YzAsNC42OTcsMy44MDgsOC41MDUsOC41MDUsOC41MDVoMTU2LjQ5MSAgICBjNC42OTcsMCw4LjUwNS0zLjgwOCw4LjUwNS04LjUwNUMxOTIuMjEzLDE2OC41NDEsMTg4LjQwNSwxNjQuNzMzLDE4My43MDgsMTY0LjczM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></div>
+                            <h3><a href="services-single.html">deblokkeren riolen</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-column col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="service-box-four">
+                        <div class="inner-box">
+                            <!-- <div class="icon-box"><span class="flaticon-bar-chart-1"></span></div> -->
+                            <div class="icon-box"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjMycHgiIHZpZXdCb3g9IjAgMCA0ODAuMDA1MzUgNDgwIiB3aWR0aD0iMzJweCI+PHBhdGggZD0ibTQ3MiAxMzYuMDAzOTA2YzQuNDE3OTY5IDAgOC0zLjU4MjAzMSA4LTggMC00LjQxNzk2OC0zLjU4MjAzMS04LTgtOGgtNDB2LThoNDBjNC40MTc5NjkgMCA4LTMuNTgyMDMxIDgtOCAwLTQuNDE3OTY4LTMuNTgyMDMxLTgtOC04aC00OGMtNC40MTc5NjkgMC04IDMuNTgyMDMyLTggOHY0OC42NDA2MjVjLTI3LjUyNzM0NCAzLjk3MjY1Ny00Ny45Njg3NSAyNy41NDY4NzUtNDggNTUuMzU5Mzc1LjAwNzgxMiAyLjA3MDMxMy4xMjUgNC4xNDA2MjUuMzU5Mzc1IDYuMTk5MjE5LS4xODc1LjU4MjAzMS0uMzA4NTk0IDEuMTg3NS0uMzU5Mzc1IDEuODAwNzgxdjcyYzAgNC40MTc5NjkgMy41ODIwMzEgOCA4IDhzOC0zLjU4MjAzMSA4LTh2LTQwLjg4MjgxMmMxNy4wNjI1IDE3LjQ4MDQ2OCA0My40ODgyODEgMjEuODc1IDY1LjI4OTA2MiAxMC44NTU0NjggMjEuODAwNzgyLTExLjAxOTUzMSAzMy45MzM1OTQtMzQuOTAyMzQzIDI5Ljk3NjU2My01OS4wMDM5MDYtMy45NTcwMzEtMjQuMTA1NDY4LTIzLjA4NTkzNy00Mi44NTkzNzUtNDcuMjY1NjI1LTQ2LjMyODEyNXYtMTYuNjQwNjI1em0tNDggNjRjNC40MTc5NjkgMCA4IDMuNTgyMDMyIDggOCAwIDQuNDE3OTY5LTMuNTgyMDMxIDgtOCA4cy04LTMuNTgyMDMxLTgtOGMwLTQuNDE3OTY4IDMuNTgyMDMxLTggOC04em00MCA4Yy0uMDAzOTA2IDIxLjA0Njg3NS0xNi4zMjAzMTIgMzguNDkyMTg4LTM3LjMyNDIxOSAzOS45MDIzNDQtMjEgMS40MDYyNS0zOS41LTEzLjY5OTIxOS00Mi4zMTY0MDYtMzQuNTYyNS0yLjgxNjQwNi0yMC44NTkzNzUgMTEuMDE1NjI1LTQwLjMzMjAzMSAzMS42NDA2MjUtNDQuNTQyOTY5djE2LjY2NDA2M2MtMTEuMDE5NTMxIDMuODk4NDM3LTE3LjYzMjgxMiAxNS4xNjc5NjgtMTUuNjU2MjUgMjYuNjg3NSAxLjk3NjU2MiAxMS41MTk1MzEgMTEuOTY4NzUgMTkuOTQxNDA2IDIzLjY1NjI1IDE5Ljk0MTQwNnMyMS42Nzk2ODgtOC40MjE4NzUgMjMuNjU2MjUtMTkuOTQxNDA2YzEuOTc2NTYyLTExLjUxOTUzMi00LjYzNjcxOS0yMi43ODkwNjMtMTUuNjU2MjUtMjYuNjg3NXYtMTYuNjY0MDYzYzE4LjYxMzI4MSAzLjgyODEyNSAzMS45NzY1NjIgMjAuMTk5MjE5IDMyIDM5LjIwMzEyNXptMCAwIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0ibTI3MiAyNTYuMDAzOTA2di04Yy0uMDU0Njg4LTE0LjU0Njg3NS05LjkxNDA2Mi0yNy4yMjY1NjItMjQtMzAuODYzMjgxdi0yNS4xMzY3MTljMTcuNjcxODc1IDAgMzItMTQuMzI4MTI1IDMyLTMydi04OGMwLTQuNDE3OTY4LTMuNTgyMDMxLTgtOC04cy04IDMuNTgyMDMyLTggOHY4OGMwIDguODM1OTM4LTcuMTY0MDYyIDE2LTE2IDE2aC0xOTJjLTguODM1OTM4IDAtMTYtNy4xNjQwNjItMTYtMTZ2LTg4YzAtNC40MTc5NjgtMy41ODIwMzEtOC04LThzLTggMy41ODIwMzItOCA4djg4YzAgMTcuNjcxODc1IDE0LjMyODEyNSAzMiAzMiAzMnYyNS4xMzY3MTljLTE0LjA4NTkzOCAzLjYzNjcxOS0yMy45NDUzMTIgMTYuMzE2NDA2LTI0IDMwLjg2MzI4MXY4Yy0xMy4yNTM5MDYgMC0yNCAxMC43NDIxODgtMjQgMjQgMCAxMy4yNTM5MDYgMTAuNzQ2MDk0IDI0IDI0IDI0aDEuMDE1NjI1bDIzLjA1NDY4NyAxNjkuMDc4MTI1Yy41NDI5NjkgMy45NjQ4NDQgMy45Mjk2ODggNi45MjE4NzUgNy45Mjk2ODggNi45MjE4NzVoMTc2YzQgMCA3LjM4NjcxOS0yLjk1NzAzMSA3LjkyOTY4OC02LjkyMTg3NWwyMy4wNTQ2ODctMTY5LjA3ODEyNWgxLjAxNTYyNWMxMy4yNTM5MDYgMCAyNC0xMC43NDYwOTQgMjQtMjQgMC0xMy4yNTc4MTItMTAuNzQ2MDk0LTI0LTI0LTI0em0tNDAtNjR2MjRoLTE2MHYtMjR6bS0xODQgNTZjMC04LjgzNTkzNyA3LjE2NDA2Mi0xNiAxNi0xNmgxNzZjOC44MzU5MzggMCAxNiA3LjE2NDA2MyAxNiAxNnY4aC0yMDh6bTIyNCA0MGgtNDBjLTQuNDE3OTY5IDAtOCAzLjU4MjAzMi04IDggMCA0LjQxNzk2OSAzLjU4MjAzMSA4IDggOGgyMi44MzIwMzFsLTIxLjgxNjQwNiAxNjBoLTE2Mi4wMzEyNWwtMjEuODI0MjE5LTE2MGgxMjYuODM5ODQ0YzQuNDE3OTY5IDAgOC0zLjU4MjAzMSA4LTggMC00LjQxNzk2OC0zLjU4MjAzMS04LTgtOGgtMTQ0Yy00LjQxNzk2OSAwLTgtMy41ODIwMzEtOC04IDAtNC40MTc5NjggMy41ODIwMzEtOCA4LThoMjQwYzQuNDE3OTY5IDAgOCAzLjU4MjAzMiA4IDggMCA0LjQxNzk2OS0zLjU4MjAzMSA4LTggOHptMCAwIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0ibTI4MCAuMDAzOTA2MjVoLTI1NmMtMTMuMjUzOTA2IDAtMjQgMTAuNzQyMTg3NzUtMjQgMjMuOTk5OTk5NzUgMCAxMy4yNTM5MDYgMTAuNzQ2MDk0IDI0IDI0IDI0aDI1NmMxMy4yNTM5MDYgMCAyNC0xMC43NDYwOTQgMjQtMjQgMC0xMy4yNTc4MTItMTAuNzQ2MDk0LTIzLjk5OTk5OTc1LTI0LTIzLjk5OTk5OTc1em0wIDMxLjk5OTk5OTc1aC0yNTZjLTQuNDE3OTY5IDAtOC0zLjU4MjAzMS04LTggMC00LjQxNzk2OCAzLjU4MjAzMS04IDgtOGgyNTZjNC40MTc5NjkgMCA4IDMuNTgyMDMyIDggOCAwIDQuNDE3OTY5LTMuNTgyMDMxIDgtOCA4em0wIDAiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBkPSJtMTEwLjUyNzM0NCAxMDQuMDAzOTA2aDMzLjQ3MjY1NmM0LjQxNzk2OSAwIDgtMy41ODIwMzEgOC04IDAtNC40MTc5NjgtMy41ODIwMzEtOC04LThoLTMzLjQ3MjY1NmMtMy44OTQ1MzItMTEuMDIzNDM3LTE1LjE2NDA2My0xNy42MzI4MTItMjYuNjgzNTk0LTE1LjY1NjI1LTExLjUyMzQzOCAxLjk3NjU2My0xOS45NDE0MDYgMTEuOTY0ODQ0LTE5Ljk0MTQwNiAyMy42NTYyNSAwIDExLjY4NzUgOC40MTc5NjggMjEuNjc1NzgyIDE5Ljk0MTQwNiAyMy42NTIzNDQgMTEuNTE5NTMxIDEuOTc2NTYyIDIyLjc4OTA2Mi00LjYzMjgxMiAyNi42ODM1OTQtMTUuNjUyMzQ0em0tMzAuNTI3MzQ0LThjMC00LjQxNzk2OCAzLjU4MjAzMS04IDgtOHM4IDMuNTgyMDMyIDggOGMwIDQuNDE3OTY5LTMuNTgyMDMxIDgtOCA4cy04LTMuNTgyMDMxLTgtOHptMCAwIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0ibTIwOC41NjY0MDYgMzY1LjQ1NzAzMWMtMzEuMjY1NjI1IDMxLjE4NzUtODEuODY3MTg3IDMxLjE4NzUtMTEzLjEzMjgxMiAwLTMuMTMyODEzLTMuMTIxMDkzLTguMjA3MDMyLTMuMTEzMjgxLTExLjMyODEyNS4wMTk1MzEtMy4xMjUgMy4xMjg5MDctMy4xMTcxODggOC4yMDMxMjYuMDE1NjI1IDExLjMyNDIxOSAzNy41MTk1MzEgMzcuNDE3OTY5IDk4LjIzODI4MSAzNy40MTc5NjkgMTM1Ljc1NzgxMiAwIDIuMDgyMDMyLTIuMDA3ODEyIDIuOTE0MDYzLTQuOTgwNDY5IDIuMTgzNTk0LTcuNzc3MzQzLS43MzQzNzUtMi43OTY4NzYtMi45MTc5NjktNC45ODA0NjktNS43MTQ4NDQtNS43MTQ4NDQtMi43OTY4NzUtLjczMDQ2OS01Ljc2OTUzMS4xMDE1NjItNy43ODEyNSAyLjE4MzU5NHptMCAwIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0ibTM1MiAzNTIuMDAzOTA2aDk2YzQuNDE3OTY5IDAgOC0zLjU4MjAzMSA4LTggMC00LjQxNzk2OC0zLjU4MjAzMS04LTgtOGgtOTZjLTExLjc4OTA2Mi0uMDQyOTY4LTIxLjg1MTU2MiA4LjUwMzkwNi0yMy43MTQ4NDQgMjAuMTQ0NTMyLTEuODYzMjgxIDExLjY0MDYyNCA1LjAzMTI1IDIyLjkwNjI1IDE2LjI0MjE4OCAyNi41NDI5NjhsMy40OTYwOTQgNDEuOTc2NTYzIDEuMzM1OTM3IDE2IDIuNjY0MDYzIDMyYy4zNDc2NTYgNC4xNDg0MzcgMy44MTI1IDcuMzM1OTM3IDcuOTc2NTYyIDcuMzM1OTM3aDgwYzQuMTcxODc1LjAxMTcxOSA3LjY1MjM0NC0zLjE3OTY4NyA4LTcuMzM1OTM3bDIuNjcxODc1LTMyIDEuMzI4MTI1LTE2IDQtNDhjLjE4NzUtMi4yMzQzNzUtLjU3NDIxOS00LjQ0NTMxMy0yLjA5Mzc1LTYuMDkzNzUtMS41MjM0MzgtMS42NDQ1MzEtMy42NjQwNjItMi41NzgxMjUtNS45MDYyNS0yLjU3MDMxM2gtOTZjLTQuNDE3OTY5IDAtOC0zLjU4MjAzMS04LTggMC00LjQxNzk2OCAzLjU4MjAzMS04IDgtOHptMTUuMzU5Mzc1IDExMi0xLjMzNTkzNy0xNmg2Ny45NTMxMjRsLTEuMzM1OTM3IDE2em02Ny45NDUzMTMtMzJoLTcwLjYwOTM3NmwtMS4zMzU5MzctMTZoNzMuMjczNDM3em00LTQ4LTEuMzM1OTM4IDE2aC03NS45NDUzMTJsLTEuMzI4MTI2LTE2em0wIDAiIGZpbGw9IiNGRkZGRkYiLz48L3N2Zz4K" /></div>
+                            <h3><a href="services-single.html">WC / toilet ontstoppen</a></h3>
+                            
+                        </div>
+                    </div>
+                    <div class="service-box-four">
+                        <div class="inner-box">
+                            <!-- <div class="icon-box"><span class="flaticon-business-4"></span></div> -->
+                            <div class="icon-box"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjMycHgiIHZpZXdCb3g9IjAgLTcyIDUxMi4wMDEwMSA1MTIiIHdpZHRoPSIzMnB4Ij48cGF0aCBkPSJtMzkyLjIzODI4MSAyMDAuMzUxNTYyaDE2LjAyNzM0NHYxNS4xMzI4MTNoLTE2LjAyNzM0NHptMCAwIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0ibTQyNC4yOTI5NjkgMjAwLjM1MTU2MmgxNi4wMjczNDN2MTUuMTMyODEzaC0xNi4wMjczNDN6bTAgMCIgZmlsbD0iI0ZGRkZGRiIvPjxwYXRoIGQ9Im01MTIgMTEyLjE5NTMxMmgtMTAzLjczNDM3NXYxNS4xMzY3MTloODguNTk3NjU2djMyLjk0OTIxOWgtMjQwLjg2MzI4MXYxNS4xMzI4MTJoMjE2LjgyNDIxOXYxMy4zMzk4NDRsLTE2LjAzMTI1IDE2LjAyNzM0NHY4My43MjI2NTZoLTMxMi45ODgyODF2MTUuMTM2NzE5aDg4LjYwMTU2MnYxNi45MTc5NjloLTE2LjQ3NjU2MnYxNS4xMzY3MThoMTYuNDc2NTYydjMyLjA1NDY4OGg0Ny4xOTE0MDZ2LTMyLjA1NDY4OGgxNi40NzI2NTZ2LTE1LjEzNjcxOGgtMTYuNDcyNjU2di0xNi45MTc5NjloMTkyLjMzMjAzMnYtOTIuNTg5ODQ0bDE2LjAzMTI1LTE2LjAyNzM0M3YtMTkuNjA5Mzc2aDI0LjAzOTA2MnptLTI0Ny41MzkwNjIgMjQwLjQxNzk2OWgtMTYuOTIxODc2di0xNi45MTc5NjloMTYuOTIxODc2em0tMTYuOTIxODc2LTMyLjA1NDY4N3YtMTYuOTE3OTY5aDE2LjkyMTg3NnYxNi45MTc5Njl6bTAgMCIgZmlsbD0iI0ZGRkZGRiIvPjxwYXRoIGQ9Im01NS4yMDMxMjUgMjE1LjQ4NDM3NWgyODguOTQ5MjE5di0xNS4xMzI4MTNoLTI5My4zNzg5MDZsLTExLjU5Mzc1LTExLjU5NzY1NnYtMTMuMzM1OTM3aDE5Mi43NzczNDN2LTE1LjEzNjcxOWgtMjE2LjgyMDMxMnYtMzIuOTQ5MjE5aDM2OS4wODU5Mzd2LTE1LjEzNjcxOWgtOTYuNjEzMjgxdi0yNC45MzM1OTNoNDAuMDcwMzEzdi00Ny4xOTE0MDdoLTQwLjA3MDMxM3YtMjcuNjIxMDkzbC0xMi40NDUzMTMtMTIuNDQ5MjE5aC0zOC4zMjgxMjRsLTEyLjQ0NTMxMyAxMi40NDkyMTl2MjcuNjIxMDkzaC00MC4wNzAzMTN2NDcuMTkxNDA3aDQwLjA3MDMxM3YyNC45MzM1OTNoLTIyNC4zOTA2MjV2NjMuMjIyNjU3aDI0LjA0Mjk2OXYxOS42MDU0NjlsMTYuMDI3MzQzIDE2LjAyNzM0M3Y5Mi41ODk4NDRoNzkuNjkxNDA3di0xNS4xMzY3MTloLTY0LjU1ODU5NHptMTg0LjMyNDIxOS0xOTYuNzY1NjI1IDMuNTc4MTI1LTMuNTgyMDMxaDI1Ljc4OTA2MmwzLjU4MjAzMSAzLjU4MjAzMXYyMS4zNTE1NjJoLTMyLjk0OTIxOHptLTQwLjA3MDMxMyAzNi40ODgyODFoMTEzLjA4NTkzOHYxNi45MTc5NjloLTExMy4wODU5Mzh6bTczLjAxNTYyNSAzMi4wNTQ2ODh2MjQuOTMzNTkzaC0zMi45NDUzMTJ2LTI0LjkzMzU5M3ptMCAwIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0ibTM2MC4xNzk2ODggMjAwLjM1MTU2MmgxNi4wMzEyNXYxNS4xMzI4MTNoLTE2LjAzMTI1em0wIDAiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBkPSJtMTExLjc1IDI3MS41ODIwMzFoLTM5LjYyNXYtMzEuNjA5Mzc1aDE1LjEzNjcxOXYxNi40NzI2NTZoMjQuNDg4Mjgxem0wIDAiIGZpbGw9IiNGRkZGRkYiLz48L3N2Zz4K" /></div>
+                            <h3><a href="services-single.html">gootsteen ontstoppen</a></h3>
+                            
+                        </div>
+                    </div>
+                    <div class="service-box-four">
+                        <div class="inner-box">
+                            <!-- <div class="icon-box"><span class="flaticon-money-1"></span></div> -->
+                            <div class="icon-box"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGcgaWQ9IlNWR0NsZWFuZXJJZF8wIj4KCTxnPgoJCTxwYXRoIGQ9Ik0zNjYuOTMzLDMwNy4ySDE0NS4wNjdjLTQuNzEsMC04LjUzMywzLjgxNC04LjUzMyw4LjUzM3YxODcuNzMzYzAsNC43MTksMy44MjMsOC41MzMsOC41MzMsOC41MzNoMjIxLjg2NyAgICBjNC43MTksMCw4LjUzMy0zLjgxNCw4LjUzMy04LjUzM1YzMTUuNzMzQzM3NS40NjcsMzExLjAxNCwzNzEuNjUyLDMwNy4yLDM2Ni45MzMsMzA3LjJ6IE0zNTguNCw0OTQuOTMzSDE1My42VjMyNC4yNjdoMjA0LjggICAgVjQ5NC45MzN6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzY2LjkzMywzMDcuMkgxNDUuMDY3Yy00LjcxLDAtOC41MzMsMy44MTQtOC41MzMsOC41MzN2MTg3LjczM2MwLDQuNzE5LDMuODIzLDguNTMzLDguNTMzLDguNTMzaDIyMS44NjcgICAgYzQuNzE5LDAsOC41MzMtMy44MTQsOC41MzMtOC41MzNWMzE1LjczM0MzNzUuNDY3LDMxMS4wMTQsMzcxLjY1MiwzMDcuMiwzNjYuOTMzLDMwNy4yeiBNMzU4LjQsNDk0LjkzM0gxNTMuNlYzMjQuMjY3aDIwNC44ICAgIFY0OTQuOTMzeiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTE0NS4wNjcsMzA3LjJIOC41MzNjLTQuNzEsMC04LjUzMywzLjgxNC04LjUzMyw4LjUzM3YxODcuNzMzQzAsNTA4LjE4NiwzLjgyMyw1MTIsOC41MzMsNTEyaDEzNi41MzMgICAgYzQuNzEsMCw4LjUzMy0zLjgxNCw4LjUzMy04LjUzM1YzMTUuNzMzQzE1My42LDMxMS4wMTQsMTQ5Ljc3NywzMDcuMiwxNDUuMDY3LDMwNy4yeiBNMTM2LjUzMyw0OTQuOTMzSDE3LjA2N1YzMjQuMjY3aDExOS40NjcgICAgVjQ5NC45MzN6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNTAzLjQ2NywzMDcuMkgzNjYuOTMzYy00LjcxOSwwLTguNTMzLDMuODE0LTguNTMzLDguNTMzdjE4Ny43MzNjMCw0LjcxOSwzLjgxNCw4LjUzMyw4LjUzMyw4LjUzM2gxMzYuNTMzICAgIGM0LjcxOSwwLDguNTMzLTMuODE0LDguNTMzLTguNTMzVjMxNS43MzNDNTEyLDMxMS4wMTQsNTA4LjE4NiwzMDcuMiw1MDMuNDY3LDMwNy4yeiBNNDk0LjkzMyw0OTQuOTMzSDM3NS40NjdWMzI0LjI2N2gxMTkuNDY3ICAgIFY0OTQuOTMzeiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTMzMi44LDM3NS40NjdIMTc5LjJjLTQuNzEsMC04LjUzMywzLjgxNC04LjUzMyw4LjUzM3Y4NS4zMzNjMCw0LjcxOSwzLjgyMyw4LjUzMyw4LjUzMyw4LjUzM2gxNTMuNiAgICBjNC43MTksMCw4LjUzMy0zLjgxNCw4LjUzMy04LjUzM1YzODRDMzQxLjMzMywzNzkuMjgxLDMzNy41MTksMzc1LjQ2NywzMzIuOCwzNzUuNDY3eiBNMzI0LjI2Nyw0NjAuOEgxODcuNzMzdi02OC4yNjdoMTM2LjUzMyAgICBWNDYwLjh6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIyNjQuNTMzIiB5PSIzNDEuMzMzIiB3aWR0aD0iMTcuMDY3IiBoZWlnaHQ9IjE3LjA2NyIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHJlY3QgeD0iMjMwLjQiIHk9IjM0MS4zMzMiIHdpZHRoPSIxNy4wNjciIGhlaWdodD0iMTcuMDY3IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIxOTYuMjY3IiB5PSIzNDEuMzMzIiB3aWR0aD0iMTcuMDY3IiBoZWlnaHQ9IjE3LjA2NyIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHJlY3QgeD0iMjk4LjY2NyIgeT0iMzQxLjMzMyIgd2lkdGg9IjE3LjA2NyIgaGVpZ2h0PSIxNy4wNjciIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxyZWN0IHg9IjguNTMzIiB5PSIzNzUuNDY3IiB3aWR0aD0iMTM2LjUzMyIgaGVpZ2h0PSIxNy4wNjciIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxyZWN0IHg9IjU5LjczMyIgeT0iMzQxLjMzMyIgd2lkdGg9IjM0LjEzMyIgaGVpZ2h0PSIxNy4wNjciIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxyZWN0IHg9IjU5LjczMyIgeT0iNDA5LjYiIHdpZHRoPSIzNC4xMzMiIGhlaWdodD0iMTcuMDY3IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIzNjYuOTMzIiB5PSIzNzUuNDY3IiB3aWR0aD0iMTM2LjUzMyIgaGVpZ2h0PSIxNy4wNjciIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxyZWN0IHg9IjQyNi42NjciIHk9IjM4NCIgd2lkdGg9IjE3LjA2NyIgaGVpZ2h0PSIxMTkuNDY3IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSI0MTguMTMzIiB5PSIzNDEuMzMzIiB3aWR0aD0iMzQuMTMzIiBoZWlnaHQ9IjE3LjA2NyIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHJlY3QgeD0iMzkyLjUzMyIgeT0iNDI2LjY2NyIgd2lkdGg9IjE3LjA2NyIgaGVpZ2h0PSIyNS42IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSI0NjAuOCIgeT0iNDI2LjY2NyIgd2lkdGg9IjE3LjA2NyIgaGVpZ2h0PSIyNS42IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzY0LjQzMywxMzkuMDM0TDMzMi44LDEwNy40MDFWOC41MzNjMC00LjcxLTMuODE0LTguNTMzLTguNTMzLTguNTMzSDE4Ny43MzNjLTQuNzEsMC04LjUzMywzLjgyMy04LjUzMyw4LjUzM3Y5OC44NjcgICAgbC0zMS42MzMsMzEuNjMzYy0yLjQ0MSwyLjQ0LTMuMTc0LDYuMTEtMS44NTIsOS4zMDFjMS4zMjMsMy4xODMsNC40MzcsNS4yNjUsNy44ODUsNS4yNjVoMjA0LjhjMy40NDcsMCw2LjU3MS0yLjA4Miw3Ljg4NS01LjI2NSAgICBDMzY3LjYwNywxNDUuMTQzLDM2Ni44NzQsMTQxLjQ3NCwzNjQuNDMzLDEzOS4wMzR6IE0xNzQuMTk5LDEzNi41MzNsMTkuNTY3LTE5LjU2N2MxLjYwNC0xLjU5NiwyLjUtMy43NzIsMi41LTYuMDMzVjE3LjA2NyAgICBoMTE5LjQ2N3Y5My44NjdjMCwyLjI2MSwwLjg5Niw0LjQzNywyLjUsNi4wMzNsMTkuNTY3LDE5LjU2N0gxNzQuMTk5eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ2MC44LDE4Ny43MzNjLTE4LjgyNSwwLTM0LjEzMywxNS4zMDktMzQuMTMzLDM0LjEzM3Y4LjUzM2gxNy4wNjd2LTguNTMzYzAtOS40MTIsNy42NTQtMTcuMDY3LDE3LjA2Ny0xNy4wNjcgICAgYzkuNDEyLDAsMTcuMDY3LDcuNjU0LDE3LjA2NywxNy4wNjd2OTMuODY3aDE3LjA2N3YtOTMuODY3QzQ5NC45MzMsMjAzLjA0Miw0NzkuNjI1LDE4Ny43MzMsNDYwLjgsMTg3LjczM3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxyZWN0IHg9IjQ2MC44IiB5PSIyNzMuMDY3IiB3aWR0aD0iMjUuNiIgaGVpZ2h0PSIxNy4wNjciIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yNDcuNDY3LDI1NmgtODUuMzMzYy00LjcxLDAtOC41MzMsMy44MTQtOC41MzMsOC41MzN2NTEuMmMwLDQuNzE5LDMuODIzLDguNTMzLDguNTMzLDguNTMzaDg1LjMzMyAgICBjNC43MSwwLDguNTMzLTMuODE0LDguNTMzLTguNTMzdi01MS4yQzI1NiwyNTkuODE0LDI1Mi4xNzcsMjU2LDI0Ny40NjcsMjU2eiBNMjM4LjkzMywzMDcuMmgtNjguMjY3di0zNC4xMzNoNjguMjY3VjMwNy4yeiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHJlY3QgeD0iMTM2LjUzMyIgeT0iMjczLjA2NyIgd2lkdGg9IjI1LjYiIGhlaWdodD0iMTcuMDY3IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIyNDcuNDY3IiB5PSIyNzMuMDY3IiB3aWR0aD0iMjUuNiIgaGVpZ2h0PSIxNy4wNjciIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0xNDUuMDY3LDBIOC41MzNDMy44MjMsMCwwLDMuODIzLDAsOC41MzN2MTAyLjRjMCw0LjcxLDMuODIzLDguNTMzLDguNTMzLDguNTMzaDEzNi41MzNjNC43MSwwLDguNTMzLTMuODIzLDguNTMzLTguNTMzICAgIFY4LjUzM0MxNTMuNiwzLjgyMywxNDkuNzc3LDAsMTQ1LjA2NywweiBNMTM2LjUzMywxMDIuNEgxNy4wNjdWMTcuMDY3aDExOS40NjdWMTAyLjR6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIxMDIuNCIgeT0iNTEuMiIgd2lkdGg9IjE3LjA2NyIgaGVpZ2h0PSIzNC4xMzMiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik01MDMuNDY3LDBIMzY2LjkzM2MtNC43MTksMC04LjUzMywzLjgyMy04LjUzMyw4LjUzM3YxMDIuNGMwLDQuNzEsMy44MTQsOC41MzMsOC41MzMsOC41MzNoMTM2LjUzMyAgICBjNC43MTksMCw4LjUzMy0zLjgyMyw4LjUzMy04LjUzM1Y4LjUzM0M1MTIsMy44MjMsNTA4LjE4NiwwLDUwMy40NjcsMHogTTQ5NC45MzMsMTAyLjRIMzc1LjQ2N1YxNy4wNjdoMTE5LjQ2N1YxMDIuNHoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxyZWN0IHg9IjM5Mi41MzMiIHk9IjUxLjIiIHdpZHRoPSIxNy4wNjciIGhlaWdodD0iMzQuMTMzIiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIwIiB5PSIxNzAuNjY3IiB3aWR0aD0iMTUzLjYiIGhlaWdodD0iMTcuMDY3IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSIxNy4wNjciIHk9IjE1My42IiB3aWR0aD0iMTcuMDY3IiBoZWlnaHQ9Ijc2LjgiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yNS42LDIyMS44NjdjLTE0LjExNCwwLTI1LjYsMTEuNDg2LTI1LjYsMjUuNnMxMS40ODYsMjUuNiwyNS42LDI1LjZzMjUuNi0xMS40ODYsMjUuNi0yNS42UzM5LjcxNCwyMjEuODY3LDI1LjYsMjIxLjg2NyAgICB6IE0yNS42LDI1NmMtNC43MDIsMC04LjUzMy0zLjgzMS04LjUzMy04LjUzM2MwLTQuNzAyLDMuODMxLTguNTMzLDguNTMzLTguNTMzYzQuNzAyLDAsOC41MzMsMy44MzEsOC41MzMsOC41MzMgICAgQzM0LjEzMywyNTIuMTY5LDMwLjMwMiwyNTYsMjUuNiwyNTZ6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cmVjdCB4PSI1MS4yIiB5PSIxNTMuNiIgd2lkdGg9IjE3LjA2NyIgaGVpZ2h0PSI3Ni44IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNTkuNzMzLDIyMS44NjdjLTE0LjExNCwwLTI1LjYsMTEuNDg2LTI1LjYsMjUuNnMxMS40ODYsMjUuNiwyNS42LDI1LjZzMjUuNi0xMS40ODYsMjUuNi0yNS42ICAgIFM3My44NDcsMjIxLjg2Nyw1OS43MzMsMjIxLjg2N3ogTTU5LjczMywyNTZjLTQuNzAyLDAtOC41MzMtMy44MzEtOC41MzMtOC41MzNjMC00LjcwMiwzLjgzMS04LjUzMyw4LjUzMy04LjUzMyAgICBzOC41MzMsMy44MzEsOC41MzMsOC41MzNDNjguMjY3LDI1Mi4xNjksNjQuNDM1LDI1Niw1OS43MzMsMjU2eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHJlY3QgeD0iODUuMzMzIiB5PSIxNTMuNiIgd2lkdGg9IjE3LjA2NyIgaGVpZ2h0PSI3Ni44IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNOTMuODY3LDIyMS44NjdjLTE0LjExNCwwLTI1LjYsMTEuNDg2LTI1LjYsMjUuNnMxMS40ODYsMjUuNiwyNS42LDI1LjZzMjUuNi0xMS40ODYsMjUuNi0yNS42ICAgIFMxMDcuOTgxLDIyMS44NjcsOTMuODY3LDIyMS44Njd6IE05My44NjcsMjU2Yy00LjcwMiwwLTguNTMzLTMuODMxLTguNTMzLTguNTMzYzAtNC43MDIsMy44MzEtOC41MzMsOC41MzMtOC41MzMgICAgYzQuNzAyLDAsOC41MzMsMy44MzEsOC41MzMsOC41MzNDMTAyLjQsMjUyLjE2OSw5OC41NjksMjU2LDkzLjg2NywyNTZ6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></div>
+                            <h3><a href="services-single.html">keuken pijpen ontstoppen</a></h3>
+                            
+                        </div>
+                    </div>
+                    
+                 </div>
+                
+              </div>
+           </div>
+
+        </div>
+      </section>
+      <section class="our-app  padding-top-small padding-bottom-small has-gradient ">
+        <span class="text-bg">spoedgieter</span>
+        <div class="container">
+           <div class="col-md-6 col-sm-12">
+              <h2 class="has-line">Snelste loodgietersservice, we zullen u niet teleurstellen!</h2>
+              <p class="lead mb-20">Onze werknemers zullen hun werk zo snel mogelijk doen, en we zullen ervoor zorgen dat u een gelukkige klant bent!</p>
+              
+           </div>
+           <div class="image col-md-6 hidden-sm  hidden-xs text-right">
+              <img src="/a/images/Plumbing-icon.png" alt="image">
+           </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="container">
+           <header class="text-center mb-70">
+              <h2 class="with-bg-text has-line-center">
+                 <span class="heading-bg-text">Over ons</span>Waarom kiezen mensen voor Spoedgieter?
+              </h2>
+           </header>
+           <div class="row">
+             <div class="col-md-6 col-sm-12">
+              <div class="about-img">
+                <img src="/a/images/plumbing-images-png-2.png" alt="image" class="center-block">
+              </div>
+           </div>
+           <div class="skills col-md-6 col-sm-12">
+              <h2 class="has-line">Alles wat je nodig hebt en meer op één plek</h2>
+              <p class="lead mb-20">Niet dat we gewoon een snelle service zijn, onze werknemers zullen ook vriendelijk zijn voor onze klanten!</p>
+              <p class="lead mb-20">Hieronder ziet u een aantal scores die behaald zijn na een enquête!</p>
+              <div class="skill">
+                 <ul class="list-unstyled list-inline clearfix">
+                    <li class="title">Relatieve snelheid</li>
+                    <li class="strength">75%</li>
+                 </ul>
+                 <div class="skill-progress">
+                    <div class="progress-bar has-gradient" style="width: 75%"></div>
+                 </div>
+              </div>
+              <div class="skill">
+                 <ul class="list-unstyled list-inline clearfix">
+                    <li class="title">Relatieve kwalitieit</li>
+                    <li class="strength">95%</li>
+                 </ul>
+                 <div class="skill-progress">
+                    <div class="progress-bar has-gradient" style="width: 95%"></div>
+                 </div>
+              </div>
+
+              <div class="skill">
+                 <ul class="list-unstyled list-inline clearfix">
+                    <li class="title">Relatieve professionaliteit</li>
+                    <li class="strength">90%</li>
+                 </ul>
+                 <div class="skill-progress">
+                    <div class="progress-bar has-gradient" style="width: 90%"></div>
+                 </div>
+              </div>
+            </div>
+           </div>
+        </div>
+      </section>
+      <div class="facts  padding-top-small padding-bottom-small has-gradient ">
+        <span class="text-bg">Onze leuke weetjes</span>
+        <div class="container">
+           <div class="fact-box count-box col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="inner">
+                 <div class="icon-box"><span class="flaticon-business"></span></div>
+                    <div class="content">
+                        <div class="count-outer">
+                            <span class="count-text counter">27</span>
+                        </div>
+                        <div class="counter-title">JARENLANGE ERVARING</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fact-box count-box col-lg-3 col-md-3 col-sm-6 col-xs-12 fact-box-xs">
+                <div class="inner">
+                 <div class="icon-box"><span class="flaticon-shape"></span></div>
+                    <div class="content">
+                        <div class="count-outer">
+                            <span class="count-text counter">157</span>
+                        </div>
+                        <div class="counter-title">PROFESSIONELE WERKNEMERS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fact-box count-box col-lg-3 col-md-3 col-sm-6 col-xs-12 fact-box-sm">
+                <div class="inner">
+                 <div class="icon-box"><span class="flaticon-archives"></span></div>
+                    <div class="content">
+                        <div class="count-outer">
+                            <span class="count-text counter">70</span>
+                        </div>
+                        <div class="counter-title">OPERATIONELE STEDEN</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fact-box count-box col-lg-3 col-md-3 col-sm-6 col-xs-12 fact-box-sm">
+                <div class="inner">
+                 <div class="icon-box"><span class="flaticon-medal"></span></div>
+                    <div class="content">
+                        <div class="count-outer">
+                            <span class="count-text counter">940</span>
+                        </div>
+                        <div class="counter-title">GELUKKIGE KLANTEN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <section id="testimonials" class="testimonials no-padding-bottom">
+        <div class="container text-center">
+           <header class="text-center mb-70">
+              <h2 class="with-bg-text has-line-center">
+                 <span class="heading-bg-text">Reviews</span>Wat onze klanten zeggen
+              </h2>
+           </header>
+           <div class="carousel-outer">
+              <div class="testimonials-style-two">
+                 <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="testimonial-item has-shadow">
+                       <div class="inner-box">
+                          <!-- <figure class="author-thumb img-circle"><img class="img-circle" src="" alt="image"></figure> -->
+                          <div class="text">De servicemedewerkers kwamen snel aan.
+                              Ik ben meer dan alleen een tevreden klant, ik ben blij om te weten dat er vandaag zulke goede diensten zijn.
+                              Nochtans zou ik willen vermelden dat het werk heel snel gedaan was!</div>
+                          <div class="info">T. Barkley </div>
+                          <div class="quote-icon"><span class="fa fa-quote-left"></span></div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="item item-box-xs col-md-4 col-sm-6 col-xs-12">
+                    <div class="testimonial-item has-shadow">
+                       <div class="inner-box">
+                          <!-- <figure class="author-thumb img-circle"><img class="img-circle" src="" alt="image"></figure> -->
+                          <div class="text">Ik heb nog nooit zo'n goedkope service gezien, terwijl het werk zo snel en zo simpel en schoon wordt gedaan ... Ik heb nog nooit problemen met mijn pijp ondervonden, ik ben erg blij om deze service te gebruiken</div>
+                          <div class="info">J. Hendrikx </div>
+                          <div class="quote-icon"><span class="fa fa-quote-left"></span></div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="item item-box-sm col-md-4 col-sm-6 col-xs-12">
+                    <div class="testimonial-item has-shadow">
+                       <div class="inner-box">
+                          <!-- <figure class="author-thumb img-circle"><img class="img-circle" src="" alt="image"></figure> -->
+                          <div class="text">Ik dacht altijd dat ze allemaal oplichters zijn, maar deze service is meer dan onmogelijk van bestaan !!! Ik ben zo blij met de baan die ze hebben gedaan, en vooral de snelheid waarmee het werd gedaan! 5 sterren voor hen!</div>
+                          <div class="info">L. Roberth</div>
+                          <div class="quote-icon"><span class="fa fa-quote-left"></span></div>
+                       </div>
+                    </div>
+                 </div>
+
+              </div>
+           </div>
+        </div>               
+      </section>
+      <footer class="main-footer footer-style-two text-center">
+        <div class="widgets-section padding-top-small padding-bottom-small">
+           <div class="container">
+              <div class="row clearfix">
+                 <div class="footer-column col-md-6 col-sm-12 col-xs-12">
+                    <div class="footer-widget about-widget">
+                       <h3 class="has-line-center">Over Ons</h3>
+                       <div class="widget-content">
+                          <div class="text">Wij zijn de beste loodgietersdienst, want we serveren snelle en gequallificeerde service! Onze medewerkers doen hun best in onze service en ze zijn vriendelijk voor onze klanten!</div>
+                             <!-- <ul class="social-links">
+                                <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                             </ul> -->
+                           </div>
+                       </div>
+                   </div>
+                   <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                       <div class="footer-widget contact-widget">
+                           <h3 class="has-line-center">Contacteer ons</h3>
+                           <div class="widget-content">
+                               <ul class="contact-info">
+                                   <li><div class="icon"><span class="flaticon-support"></span></div></li>
+                                   <li>${cityThingy}$</li>
+                                   <li>+31 8513 05219</li>
+                                   <li>info@spoedgieter.com</li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+        <div class="footer-bottom">
+           <div class="auto-container">
+              <div class="copyright-text">Copyright © 2019. All Rights Reserved </div>
+           </div>
+        </div>
+      </footer>
+ 
+    </div>
+
+</body></html>

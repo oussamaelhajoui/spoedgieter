@@ -103,7 +103,7 @@ String.prototype.replaceAll = function (find, replace) {
     return str.replace(new RegExp(find.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'g'), replace);
 };
 
-var index = fs.readFileSync('home.html', 'utf-8');
+var index = fs.readFileSync('home-nl.html', 'utf-8');
 var shit = fs.readFileSync("shit.html",'utf-8');
 
 var httpServer = http.createServer(function(req, res) {
@@ -118,13 +118,13 @@ var httpServer = http.createServer(function(req, res) {
         if (req.url !== '/') {
             var thecity = capitalizeFirstLetter(req.url.substring(1));
             if (whitelist.indexOf(thecity) > -1) {
-                res.end(index.replaceAll('${cityThingy}$', 'Best plumber service at ' + thecity));
+                res.end(index.replaceAll('${cityThingy}$', 'Beste loodgietersdienst in ' + thecity));
             }
             else {
-                res.end(index.replaceAll('${cityThingy}$', 'Best plumber service!')); // Non-whitelisted city supplied, we should use none (Best plumber service!)
+                res.end(index.replaceAll('${cityThingy}$', 'Beste loodgietersdienst!')); // Non-whitelisted city supplied, we should use none (Best plumber service!)
             }
         } else {
-            res.end(index.replaceAll('${cityThingy}$', 'Best plumber service!')); //The user did not supplied a city on the url, we'll use none (Best plumber service!)
+            res.end(index.replaceAll('${cityThingy}$', 'Beste loodgietersdienst')); //The user did not supplied a city on the url, we'll use none (Best plumber service!)
             // res.end(shit);
         }
     }
