@@ -114,23 +114,16 @@ var httpServer = http.createServer(function(req, res) {
         if (req.url !== '/') {
             var thecity = capitalizeFirstLetter(req.url.substring(1));
             if (whitelist.indexOf(thecity) > -1) {
-                returnIndex(thecity); // A whitelisted city was requested, we'll show the user info accordingly (Best plumer at {x})
+                res.end(index.replaceAll('${cityThingy}$', 'Best plumber service at ' + thecity));
             }
             else {
-                returnIndex() // Non-whitelisted city supplied, we should use none (Best plumber service!)
+                res.end(index.replaceAll('${cityThingy}$', 'Best plumber service!')); // Non-whitelisted city supplied, we should use none (Best plumber service!)
             }
         } else {
-            returnIndex(); //The user did not supplied a city on the url, we'll use none (Best plumber service!)
+            res.end(index.replaceAll('${cityThingy}$', 'Best plumber service!')); //The user did not supplied a city on the url, we'll use none (Best plumber service!)
         }
     }
-
-    function returnIndex(city) {
-        if (city) {
-            res.end(index.replaceAll('${cityThingy}$', 'Best plumber service at ' + city));
-        } else {
-            res.end(index.replaceAll('${cityThingy}$', 'Best plumber service!'));
-        }
-    }
+    
     function filer(file) {
             var filePath = file;
             if (filePath.startsWith('./')) {
